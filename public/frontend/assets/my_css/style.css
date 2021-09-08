@@ -1,0 +1,171 @@
+.wrapper-inner {
+	margin: 15px 20px;
+	background-color: #fff;
+	padding: 30px;
+}
+.product-wrapper {
+	padding: 10px;
+}
+.border-right {
+	border-right: 1px solid red;
+}
+.card {
+	height: 280px;
+	box-shadow: 0 0 10px 0 rgba(100, 100, 100, 0.26);
+}
+.card-title, .discount-percent {
+	font-weight: 900;
+}
+
+.product-offer {
+	left: 150px;
+    position: relative;
+    bottom: 100px;
+}
+.product-price {
+	position: relative;
+    left: 280px;
+    bottom: 150px;
+}
+.product-get {
+	position: relative;
+    left: 400px;
+    bottom: 220px;
+}
+.btn.btn-lg {
+	background-color: #C31A65;
+    padding: 8px 45px;
+	color: #fff;
+}
+.circle-left {
+	position: relative;
+    top: 29px;
+    right: 5px;
+	color: #fff;
+}
+.circle-right {
+	position: relative;
+    left: 562px;
+    bottom: -10px;
+	color: #fff;
+}
+.text-muted {
+	border-top: 1px dotted grey !important;
+	height: 65px;
+	background-color: #fcf5f8;
+}
+.fa.fa-angle-up {
+    position: relative;
+    left: 500px;
+    bottom: 65px;
+	display: inline-block;
+  border-radius: 60px;
+  color: #fff;
+  padding: 0.4em 0.5em;
+  background-color: #C31A65;
+}
+.clipboard {
+	position: relative;
+    left: 30px;
+}
+
+/* product image slider  */
+/* Hide the images by default */
+.mySlides {
+	display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+	cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+	cursor: pointer;
+	position: absolute;
+	top: 33%;
+	width: auto;
+	padding: 16px;
+	margin-top: -50px;
+	color: black;
+	font-weight: bold;
+	font-size: 20px;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+	-webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  /* .prev:hover,
+  .next:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+  } */
+  
+  .row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+	float: left;
+	width: 20%;
+    background-color: #fff;
+    border-radius: 10px;
+	margin: 5px;
+  }
+  
+  
+  
+  .active,
+  .demo:hover {
+	opacity: 1;
+  }
+
+.product-ratings .checked {
+	color: #C31A65;
+  }
+.size-info {
+	margin-top: 150px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+.btn.btn-default {
+	border: 1px solid #00000033;
+    width: 20%;
+    font-weight: 900;
+}
+input[type="radio"] {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
+    transform: scale(1.5);
+}
+
+input[type='radio']:checked:after {
+	width: 15px;
+	height: 15px;
+	border-radius: 15px;
+	top: -2px;
+	left: -1px;
+	position: relative;
+	background-color: #C31A65;
+	content: '';
+	display: inline-block;
+	visibility: visible;
+	border: 1px solid white;
+}
+.fa.fa-minus, .fa.fa-plus {
+	padding: 8px;
+	background-color: #fff;
+	border-radius: 60px;
+}
