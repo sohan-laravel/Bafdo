@@ -11,13 +11,21 @@
                                     @foreach ($category as $row)
 
                                     <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">{{ $row->name }}<i class="fas fa-angle-right "></i></a>
-                                        @foreach ($subcategory as $subcat)
+                                        @foreach ($row->Subcategories as $subcat)
 
                                         <ul class="dropdown-menu">
                                             {{ $subcat->subcategory_name }}
                                         </ul>
 
                                          @endforeach
+
+                                        {{-- @foreach ($row->Subsubcategories as $subsubcat)
+
+                                        <ul class="dropdown-menu">
+                                            {{ $subsubcat->subsubcategory_name }}
+                                        </ul>
+
+                                         @endforeach --}}
 
                                     </li>
 

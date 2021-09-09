@@ -20,7 +20,7 @@
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="{{ route('admin.dashboard') }}">Home</a></li>
+              <li class="breadcrumb-item"><a href="{{ route('vendor.dashboard') }}">Home</a></li>
               <li class="breadcrumb-item active">Vendor Dashboard</li>
             </ol>
           </div><!-- /.col -->

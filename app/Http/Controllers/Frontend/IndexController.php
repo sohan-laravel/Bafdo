@@ -15,10 +15,9 @@ class IndexController extends Controller
     {
 
         $slider = Slider::where('status', 1)->orderBy('id', 'desc')->get();
-        $category = Category::where('status', 1)->orderBy('id', 'desc')->get();
-        $subcategory = Subcategory::where('status', 1)->orderBy('id', 'desc')->get();
+        $category = Category::with('Subcategories')->with('Subsubcategories')->where('status', 1)->orderBy('id', 'desc')->get();
 
-        return view('frontend.index', compact('slider', 'category', 'subcategory'));
+        return view('frontend.index', compact('slider', 'category'));
     }
 
     public function contact()

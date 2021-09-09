@@ -17,6 +17,11 @@ Route::group(['prefix' => 'vendor'], function () {
     Route::middleware(['auth:vendor'])->group(function () {
         Route::post('/logout', 'Vendor\LoginController@logout')->name('vendor.logout');
         Route::get('/dashboard', 'Vendor\DashboardController@index')->name('vendor.dashboard');
+
+        // vendor product 
+
+        Route::resource('product', 'Vendor\ProductController', ['names' => 'vendor.product']);
+        Route::post('product/inactive', 'Vendor\ProductController@inactive')->name('vendor.product.inactive');
     });
 });
 
@@ -61,6 +66,13 @@ Route::group(['namespace' => 'Backend', 'prefix' => 'admin', 'middleware' => 'au
 
     Route::resource('subcategory', 'SubcategoryController', ['names' => 'admin.subcategory']);
     Route::post('subcategory/inactive', 'SubcategoryController@inactive')->name('admin.subcategory.inactive');
+
+    // CATEGORY SECTION ENDS
+
+    // Sub CATEGORY SECTION
+
+    Route::resource('subsubcategory', 'SubsubcategoryController', ['names' => 'admin.subsubcategory']);
+    Route::post('subsubcategory/inactive', 'SubsubcategoryController@inactive')->name('admin.subsubcategory.inactive');
 
     // CATEGORY SECTION ENDS
 

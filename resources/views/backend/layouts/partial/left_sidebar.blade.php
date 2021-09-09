@@ -75,6 +75,14 @@
               </p>
             </a>
           </li>
+          <li class="nav-item">
+            <a href="{{ route('admin.subsubcategory.index') }}" class="nav-link {{ Route::is('admin.subsubcategory.index') ? 'active' : '' }}">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                Subsubcategory
+              </p>
+            </a>
+          </li>
           
           {{-- <li class="nav-item">
             <a href="{{ route('admin.topbar.index') }}" class="nav-link {{ Route::is('admin.topbar.index') ? 'active' : '' }}">
